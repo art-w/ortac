@@ -102,3 +102,4 @@ type alt_tree = Ealt | Nalt of (alt_tree * int * alt_tree)
 val make_alt_tree: alt_tree -> int -> alt_tree -> alt_tree
 (*@ t = make_alt_tree l x r
       ensures let c = (l, x, r) in t = Nalt c *)
+
